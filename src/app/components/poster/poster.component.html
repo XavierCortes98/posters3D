@@ -1,0 +1,47 @@
+<form [formGroup]="posterForm" (ngSubmit)="submit()">
+  <div>
+    <label for="name">Left Name: </label>
+    <input type="text" id="name" formControlName="leftName" />
+  </div>
+
+  <div>
+    <label for="name">Right Name: </label>
+    <input type="text" id="name" formControlName="rightName" />
+  </div>
+
+  <div>
+    <label for="name">Description: </label>
+    <input type="text" id="name" formControlName="description" />
+  </div>
+
+  <div>
+    <label for="name">Title: </label>
+    <input type="text" id="name" formControlName="title" />
+  </div>
+
+  <button type="submit">Submitt</button>
+</form>
+
+<main>
+  <article id="furiosa_poster">
+    <header id="furiosa_poster__header">
+      <h1 id="furiosa_poster__header__title" data-title="FURIOSA">
+        {{ title }}
+      </h1>
+    </header>
+    <p id="furiosa_poster__anya">{{ leftName }}</p>
+    <p id="furiosa_poster__chris">{{ rightName }}</p>
+    <p id="furiosa_poster__george">
+      {{ description }}
+    </p>
+    <p id="furiosa_poster__mad_max_saga">
+      <span data-title="A Mad">A Mad</span
+      ><span data-title="Max Saga">Max Saga</span>
+    </p>
+    <img
+      id="furiosa_poster__front_image"
+      src="https://cdn.jsdelivr.net/gh/olivier3lanc/cinematics-resources@master/furiosa/medias/furiosa_front.webp"
+      alt="Furiosa Front image"
+    />
+  </article>
+</main>
